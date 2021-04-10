@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "soul_magic:silver_ingot_to_nuggets"
+    },
+    "groups": [
+      "soul_magic"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "soul_magic:soul_silver_ingot"
+      }
+    ],
+    "result": {
+      "item": "soul_magic:soul_silver_nugget",
+      "count": 9
+    }
+  }
+}

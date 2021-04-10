@@ -1,0 +1,102 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "soul_magic:missmatched_soul" : {
+                "events" : {
+                   "ambient" : "mob.zombie.say",
+                   "death" : "mob.zombie.death",
+                   "hurt" : "mob.zombie.hurt",
+                   "step" : {
+                      "pitch" : 1.0,
+                      "sound" : "mob.zombie.step",
+                      "volume" : 0.450
+                   }
+                },
+                "pitch" : [ 0.80, 1.20 ],
+                "volume" : 1.0
+            },
+            "soul_magic:soula" : {
+                "events" : {
+                   "ambient" : {
+                      "pitch" : 1.0,
+                      "sound" : "particle.soul_escape",
+                      "volume" : 1.0
+                   },
+                   "death" : "fall.soul_sand",
+                   "hurt" : "jump.soul_sand",
+                   "step" : "step.soul_sand"
+                },
+                "pitch" : [ 0.80, 1.20 ],
+                "volume" : 0.15
+            },
+            "soul_magic:soulh" : {
+                "events" : {
+                   "ambient" : {
+                      "pitch" : 1.0,
+                      "sound" : "particle.soul_escape",
+                      "volume" : 1.0
+                   },
+                   "death" : "fall.soul_sand",
+                   "hurt" : "jump.soul_sand",
+                   "step" : "step.soul_sand"
+                },
+                "pitch" : [ 0.80, 1.20 ],
+                "volume" : 0.15
+            },
+            "soul_magic:souln" : {
+                "events" : {
+                   "ambient" : {
+                      "pitch" : 1.0,
+                      "sound" : "particle.soul_escape",
+                      "volume" : 1.0
+                   },
+                   "death" : "fall.soul_sand",
+                   "hurt" : "jump.soul_sand",
+                   "step" : "step.soul_sand"
+                },
+                "pitch" : [ 0.80, 1.20 ],
+                "volume" : 0.15
+            },
+            "soul_magic:soulp" : {
+                "events" : {
+                   "ambient" : {
+                      "pitch" : 1.0,
+                      "sound" : "particle.soul_escape",
+                      "volume" : 1.0
+                   },
+                   "death" : "fall.soul_sand",
+                   "hurt" : "jump.soul_sand",
+                   "step" : "step.soul_sand"
+                },
+                "pitch" : [ 0.80, 1.20 ],
+                "volume" : 0.15
+            },
+            "soul_magic:soulinfusercore" : {
+                "events" : {
+                   "death" : "dig.stone",
+                   "hurt" : "dig.stone"
+                },
+                "pitch" : [ 0.80, 1.20 ],
+                "volume" : 1.0
+            },
+            "soul_magic:egga" : {
+                "volume" : 0
+            },
+            "soul_magic:eggh" : {
+                "volume" : 0
+            },
+            "soul_magic:eggn" : {
+                "volume" : 0
+            },
+            "soul_magic:eggp" : {
+                "volume" : 0
+            },
+            "soul_magic:soulmeal_drop" : {
+                "volume" : 0
+            },
+            "soul_magic:soulsteel_drop" : {
+                "volume" : 0
+            }
+        }
+    }
+}

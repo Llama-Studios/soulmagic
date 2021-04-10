@@ -1,0 +1,69 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "soul_magic:soulmeal_drop",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "removenow": {
+                "minecraft:spell_effects": {
+                    "add_effects": [
+                        {
+                            "effect": "wither",
+                            "duration": 99,
+                            "amplifier": 250
+                        }
+                    ]
+                }
+            }
+        },
+        "components": {
+            "minecraft:sound_volume": {
+                "value": 0
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/soulinfuser/soulmeal.json"
+            },
+            "minecraft:timer": {
+                "looping": false,
+                "time": 0.1,
+                "time_down_event": {
+                    "event": "removenow",
+                    "target": "self"
+                }
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "inanimate"
+                ]
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0
+            },
+            "minecraft:health": {
+                "value": 1,
+                "max": 1
+            },
+            "minecraft:collision_box": {
+                "width": 0.01,
+                "height": 0.01
+            },
+            "minecraft:scale": {
+                "value": 0.01
+            }
+        },
+        "events": {
+            "removenow": {
+                "add": {
+                    "component_groups": [
+                        "removenow"
+                    ]
+                }
+            }
+        }
+    }
+}

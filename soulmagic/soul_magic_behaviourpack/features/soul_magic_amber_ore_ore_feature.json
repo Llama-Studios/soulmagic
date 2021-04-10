@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "soul_magic:soul_magic_amber_ore_ore_feature"
+    },
+    "count": 6,
+    "places_block": "soul_magic:amber_ore",
+    "may_replace": [
+      "minecraft:stone"
+    ]
+  }
+}

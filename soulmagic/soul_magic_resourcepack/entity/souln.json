@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "soul_magic:souln",
+			"materials": {
+				"default": "charged_creeper"
+			},
+			"textures": {
+				"default": "textures/entities/soul/souln"
+			},
+			"geometry": {
+				"default": "geometry.souln"
+			},
+			"render_controllers": [
+				"controller.render.soul"
+			],
+			"spawn_egg": { 
+				"base_color": "#BBBBDD",
+				"overlay_color": "#8888DD"
+			}
+		}
+	}
+}

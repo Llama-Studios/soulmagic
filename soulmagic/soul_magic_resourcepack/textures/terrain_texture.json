@@ -1,0 +1,348 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 0,
+  "texture_data": {
+    "smashed_spawner": {
+      "textures": [
+        "textures/blocks/smashedspawner"
+      ]
+    },
+    "pedestal_block": {
+      "textures": [
+        "textures/blocks/pedestal_empty"
+      ]
+    },
+    "pedestal_block_filled": {
+      "textures": [
+        "textures/blocks/pedestal_spark"
+      ]
+    },
+    "pedestal_ghost": {
+      "textures": [
+        "textures/blocks/pedestal_ghost"
+      ]
+    },
+    "mandrake_stage0": {
+      "textures": [
+        "textures/blocks/mandrake_stage0"
+      ]
+    },
+    "mandrake_stage1": {
+      "textures": [
+        "textures/blocks/mandrake_stage1"
+      ]
+    },
+    "mandrake_stage2": {
+      "textures": [
+        "textures/blocks/mandrake_stage2"
+      ]
+    },
+    "mandrake_stage3": {
+      "textures": [
+        "textures/blocks/mandrake_stage3"
+      ]
+    },
+    "mandrake_stage4": {
+      "textures": [
+        "textures/blocks/mandrake_stage4"
+      ]
+    },
+    "mandrake_stage5": {
+      "textures": [
+        "textures/blocks/mandrake_stage5"
+      ]
+    },
+    "mandrake_stage6": {
+      "textures": [
+        "textures/blocks/mandrake_stage6"
+      ]
+    },
+    "mandrake_stage7": {
+      "textures": [
+        "textures/blocks/mandrake_stage7"
+      ]
+    },
+    "wither_tall_grass": {
+      "textures": [
+        "textures/blocks/wither_tall_grass"
+      ]
+    },
+    "wither_taller_grass": {
+      "textures": [
+        "textures/blocks/wither_taller_grass"
+      ]
+    },
+    "soul_magic_soul_silver_ore_up": {
+      "textures": [
+        "textures/blocks/soulsilverore"
+      ]
+    },
+    "soul_magic_soul_silver_ore_down": {
+      "textures": [
+        "textures/blocks/soulsilverore"
+      ]
+    },
+    "soul_magic_soul_silver_ore_south": {
+      "textures": [
+        "textures/blocks/soulsilverore"
+      ]
+    },
+    "soul_magic_soul_silver_ore_north": {
+      "textures": [
+        "textures/blocks/soulsilverore"
+      ]
+    },
+    "soul_magic_soul_silver_ore_west": {
+      "textures": [
+        "textures/blocks/soulsilverore"
+      ]
+    },
+    "soul_magic_soul_silver_ore_east": {
+      "textures": [
+        "textures/blocks/soulsilverore"
+      ]
+    },
+    "soul_magic_silver_block_up": {
+      "textures": [
+        "textures/blocks/silverblock"
+      ]
+    },
+    "soul_magic_silver_block_down": {
+      "textures": [
+        "textures/blocks/silverblock"
+      ]
+    },
+    "soul_magic_silver_block_south": {
+      "textures": [
+        "textures/blocks/silverblock"
+      ]
+    },
+    "soul_magic_silver_block_north": {
+      "textures": [
+        "textures/blocks/silverblock"
+      ]
+    },
+    "soul_magic_silver_block_west": {
+      "textures": [
+        "textures/blocks/silverblock"
+      ]
+    },
+    "soul_magic_silver_block_east": {
+      "textures": [
+        "textures/blocks/silverblock"
+      ]
+    },
+    "soul_magic_soul_steel_block_up": {
+      "textures": [
+        "textures/blocks/soulsteelblock"
+      ]
+    },
+    "soul_magic_soul_steel_block_down": {
+      "textures": [
+        "textures/blocks/soulsteelblock"
+      ]
+    },
+    "soul_magic_soul_steel_block_south": {
+      "textures": [
+        "textures/blocks/soulsteelblock"
+      ]
+    },
+    "soul_magic_soul_steel_block_north": {
+      "textures": [
+        "textures/blocks/soulsteelblock"
+      ]
+    },
+    "soul_magic_soul_steel_block_west": {
+      "textures": [
+        "textures/blocks/soulsteelblock"
+      ]
+    },
+    "soul_magic_soul_steel_block_east": {
+      "textures": [
+        "textures/blocks/soulsteelblock"
+      ]
+    },
+    "soul_magic_wither_grass_up": {
+      "textures": [
+        "textures/blocks/withergrasstop"
+      ]
+    },
+    "soul_magic_wither_grass_down": {
+      "textures": [
+        "textures/blocks/withergrassbottom"
+      ]
+    },
+    "soul_magic_wither_grass_south": {
+      "textures": [
+        "textures/blocks/withergrassside"
+      ]
+    },
+    "soul_magic_wither_grass_north": {
+      "textures": [
+        "textures/blocks/withergrassside"
+      ]
+    },
+    "soul_magic_wither_grass_west": {
+      "textures": [
+        "textures/blocks/withergrassside"
+      ]
+    },
+    "soul_magic_wither_grass_east": {
+      "textures": [
+        "textures/blocks/withergrassside"
+      ]
+    },
+    "soul_magic_wither_nylium_up": {
+      "textures": [
+        "textures/blocks/withernyliumtop"
+      ]
+    },
+    "soul_magic_wither_nylium_down": {
+      "textures": [
+        "textures/blocks/withernyliumbottom"
+      ]
+    },
+    "soul_magic_wither_nylium_south": {
+      "textures": [
+        "textures/blocks/withernyliumside"
+      ]
+    },
+    "soul_magic_wither_nylium_north": {
+      "textures": [
+        "textures/blocks/withernyliumside"
+      ]
+    },
+    "soul_magic_wither_nylium_west": {
+      "textures": [
+        "textures/blocks/withernyliumside"
+      ]
+    },
+    "soul_magic_wither_nylium_east": {
+      "textures": [
+        "textures/blocks/withernyliumside"
+      ]
+    },
+    "soul_magic_wither_wart_block_up": {
+      "textures": [
+        "textures/blocks/witherwartblock"
+      ]
+    },
+    "soul_magic_wither_wart_block_down": {
+      "textures": [
+        "textures/blocks/witherwartblock"
+      ]
+    },
+    "soul_magic_wither_wart_block_south": {
+      "textures": [
+        "textures/blocks/witherwartblock"
+      ]
+    },
+    "soul_magic_wither_wart_block_north": {
+      "textures": [
+        "textures/blocks/witherwartblock"
+      ]
+    },
+    "soul_magic_wither_wart_block_west": {
+      "textures": [
+        "textures/blocks/witherwartblock"
+      ]
+    },
+    "soul_magic_wither_wart_block_east": {
+      "textures": [
+        "textures/blocks/witherwartblock"
+      ]
+    },
+    "soul_magic_wither_stem_up": {
+      "textures": [
+        "textures/blocks/witherstemtop"
+      ]
+    },
+    "soul_magic_wither_stem_down": {
+      "textures": [
+        "textures/blocks/witherstemtop"
+      ]
+    },
+    "soul_magic_wither_stem_south": {
+      "textures": [
+        "textures/blocks/witherstemside"
+      ]
+    },
+    "soul_magic_wither_stem_north": {
+      "textures": [
+        "textures/blocks/witherstemside"
+      ]
+    },
+    "soul_magic_wither_stem_west": {
+      "textures": [
+        "textures/blocks/witherstemside"
+      ]
+    },
+    "soul_magic_wither_stem_east": {
+      "textures": [
+        "textures/blocks/witherstemside"
+      ]
+    },
+    "soul_magic_wither_light_up": {
+      "textures": [
+        "textures/blocks/witherlight"
+      ]
+    },
+    "soul_magic_wither_light_down": {
+      "textures": [
+        "textures/blocks/witherlight"
+      ]
+    },
+    "soul_magic_wither_light_south": {
+      "textures": [
+        "textures/blocks/witherlight"
+      ]
+    },
+    "soul_magic_wither_light_north": {
+      "textures": [
+        "textures/blocks/witherlight"
+      ]
+    },
+    "soul_magic_wither_light_west": {
+      "textures": [
+        "textures/blocks/witherlight"
+      ]
+    },
+    "soul_magic_wither_light_east": {
+      "textures": [
+        "textures/blocks/witherlight"
+      ]
+    },
+    "soul_magic_amber_ore_up": {
+      "textures": [
+        "textures/blocks/amberore"
+      ]
+    },
+    "soul_magic_amber_ore_down": {
+      "textures": [
+        "textures/blocks/amberore"
+      ]
+    },
+    "soul_magic_amber_ore_south": {
+      "textures": [
+        "textures/blocks/amberore"
+      ]
+    },
+    "soul_magic_amber_ore_north": {
+      "textures": [
+        "textures/blocks/amberore"
+      ]
+    },
+    "soul_magic_amber_ore_west": {
+      "textures": [
+        "textures/blocks/amberore"
+      ]
+    },
+    "soul_magic_amber_ore_east": {
+      "textures": [
+        "textures/blocks/amberore"
+      ]
+    }
+  }
+}

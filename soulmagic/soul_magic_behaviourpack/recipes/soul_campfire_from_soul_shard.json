@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "soul_magic:soul_campfire_from_soul_shard"
+    },
+    "groups": [
+      "soul_magic"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " t ",
+      "tst",
+      "lll"
+    ],
+    "key": {
+      "l": {
+        "item": "minecraft:log"
+      },
+      "t": {
+        "item": "minecraft:stick"
+      },
+      "s": {
+        "item": "soul_magic:soul_scrap"
+      }
+    },
+    "result": {
+      "item": "minecraft:soul_campfire"
+    }
+  }
+}

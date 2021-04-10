@@ -1,0 +1,21 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "soul_magic:wither_nylium",
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:map_color": "#191919",
+      "minecraft:loot": "loot_tables/blocks/soul_magic_wither_nylium.json",
+      "minecraft:block_light_emission": 0,
+      "minecraft:destroy_time": 0.5,
+      "minecraft:explosion_resistance": 5,
+      "minecraft:friction": 0.6,
+      "minecraft:flammable": {
+        "flame_odds": 0,
+        "burn_odds": 0
+      }
+    }
+  }
+}

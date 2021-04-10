@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.soulinfusercore": {
+			"arrays": {
+				"textures": {
+					"Array.variants": [
+						"Texture.empty",
+						"Texture.bottle",
+						"Texture.iron",
+						"Texture.jar",
+						"Texture.withermeal"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.variants[query.variant]"
+			]
+		}
+	}
+}

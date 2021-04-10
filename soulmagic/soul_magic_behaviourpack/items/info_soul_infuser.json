@@ -1,0 +1,20 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "soul_magic:info_soul_infuser",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": true,
+      "minecraft:stacked_by_data": false,
+      "minecraft:icon":{
+         "texture":"info_soul_infuser"
+      },
+      "minecraft:display_name":{
+         "value":"This is a Soul Infuser recipe"
+      }
+    }
+  }
+}

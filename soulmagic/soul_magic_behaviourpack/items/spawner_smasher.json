@@ -1,0 +1,45 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "soul_magic:spawner_smasher",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": false,
+      "minecraft:stacked_by_data": false,
+      "minecraft:icon":{
+         "texture":"spawner_smasher"
+      },
+      "minecraft:display_name":{
+         "value":"Spawner Smasher"
+      },
+      "minecraft:on_use": {
+        "on_use": {
+            "event": "soul_magic:smash",
+            "target": "self"
+        }
+      },
+      "minecraft:durability": {
+        "max_durability": 15
+      },
+      "minecraft:cooldown": {
+        "category": "hammer",
+        "duration": 15
+      }
+    },
+    "events": {
+      "soul_magic:smash": {
+        "run_command": {
+          "command": ["fill ~15 ~15 ~15 ~-15 ~-15 ~-15 soul_magic:smashed_spawner 0 replace mob_spawner"]
+        },
+        "damage": {
+          "type": "magic",
+          "amount": 1,
+          "target": "self"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "soul_magic:wither_meal_from_skull"
+    },
+    "groups": [
+      "soul_magic"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:skull",
+        "data": 1
+      }
+    },
+    "result": {
+      "item": "soul_magic:wither_meal",
+      "count": 9
+    }
+  }
+}

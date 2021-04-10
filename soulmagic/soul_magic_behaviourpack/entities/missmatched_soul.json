@@ -1,0 +1,485 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "soul_magic:missmatched_soul",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "size1": {
+                "minecraft:scale": {
+                    "value": 0.25
+                },
+                "minecraft:knockback_resistance": {
+                    "value": 0
+                },
+                "minecraft:movement": {
+                    "value": 0.6
+                },
+                "minecraft:boss": {
+                    "hud_range": 25,
+                    "name": "Missmatched Soul"
+                }
+            },
+            "size2": {
+                "minecraft:scale": {
+                    "value": 0.5
+                },
+                "minecraft:knockback_resistance": {
+                    "value": 0
+                },
+                "minecraft:movement": {
+                    "value": 0.5
+                }
+            },
+            "size3": {
+                "minecraft:scale": {
+                    "value": 1
+                },
+                "minecraft:knockback_resistance": {
+                    "value": 0
+                },
+                "minecraft:movement": {
+                    "value": 0.4
+                }
+            },
+            "size4": {
+                "minecraft:scale": {
+                    "value": 1.5
+                },
+                "minecraft:knockback_resistance": {
+                    "value": 0.5
+                },
+                "minecraft:movement": {
+                    "value": 0.3
+                }
+            },
+            "size5": {
+                "minecraft:scale": {
+                    "value": 2
+                },
+                "minecraft:knockback_resistance": {
+                    "value": 1
+                },
+                "minecraft:movement": {
+                    "value": 0.2
+                }
+            },
+            "damage1": {
+                "minecraft:health": {
+                    "value": 15,
+                    "max": 15
+                },
+                "minecraft:attack": {
+                    "damage": 14
+                }
+            }
+            ,
+            "damage2": {
+                "minecraft:health": {
+                    "value": 30,
+                    "max": 30
+                },
+                "minecraft:attack": {
+                    "damage": 11
+                }
+            },
+            "damage3": {
+                "minecraft:health": {
+                    "value": 50,
+                    "max": 50
+                },
+                "minecraft:attack": {
+                    "damage": 8
+                }
+            },
+            "damage4": {
+                "minecraft:health": {
+                    "value": 100,
+                    "max": 100
+                },
+                "minecraft:attack": {
+                    "damage": 5
+                }
+            },
+            "damage5": {
+                "minecraft:health": {
+                    "value": 160,
+                    "max": 160
+                },
+                "minecraft:attack": {
+                    "damage": 3
+                },
+                "minecraft:boss": {
+                    "hud_range": 25,
+                    "name": "Missmatched Soul"
+                }
+            },
+            "special1": {
+                "minecraft:area_attack" : {
+                    "damage_range": 4,
+                    "damage_per_tick": 1,
+                    "cause": "magic",
+                    "entity_filter": {
+                      "any_of": [
+                        { "test": "is_family", "subject": "other", "value": "player" }
+                      ]
+                    }
+                },
+                "minecraft:boss": {
+                    "hud_range": 25,
+                    "name": "Missmatched Soul"
+                }
+            },
+            "special2": {
+                "minecraft:mob_effect": {
+                    "effect_range": 5,
+                    "mob_effect": "poison",
+                    "effect_time": 10,
+                    "entity_filter": {
+                      "any_of": [
+                        { "test": "is_family", "subject": "other", "value": "player" }
+                      ] 
+                    }
+                },
+                "minecraft:boss": {
+                    "hud_range": 25,
+                    "name": "Missmatched Soul"
+                }
+            },
+            "special3": {
+                "minecraft:mob_effect": {
+                    "effect_range": 5,
+                    "mob_effect": "slowness",
+                    "effect_time": 10,
+                    "entity_filter": {
+                      "any_of": [
+                        { "test": "is_family", "subject": "other", "value": "player" }
+                      ] 
+                    }
+                  }
+            },
+            "special4": {
+                "minecraft:mob_effect": {
+                    "effect_range": 5,
+                    "mob_effect": "weakness",
+                    "effect_time": 10,
+                    "entity_filter": {
+                      "any_of": [
+                        { "test": "is_family", "subject": "other", "value": "player" }
+                      ] 
+                    }
+                  }
+            },
+            "special5": {
+                "minecraft:damage_sensor": {
+                    "triggers": {
+                      "cause": "fall",
+                      "deals_damage": false
+                    }
+                }
+            },
+            "special6": {
+                "minecraft:damage_sensor": {
+                    "triggers": [
+                        {
+                            "cause": "fire",
+                            "deals_damage": false
+                        },
+                        {
+                            "cause": "fire_tick",
+                            "deals_damage": false
+                        },
+                        {
+                            "cause": "lava",
+                            "deals_damage": false
+                        }
+                    ]
+                }
+            },
+            "special7": {
+                "minecraft:teleport": {
+                    "random_teleports": true,
+                    "max_random_teleport_time": 30,
+                    "random_teleport_cube": [ 16, 16, 16 ],
+                    "target_distance": 16,
+                    "target_teleport_chance": 0.05,
+                    "light_teleport_chance": 0.05
+                }
+            },
+            "special8": {
+                "minecraft:teleport": {
+                    "random_teleports": true,
+                    "max_random_teleport_time": 30,
+                    "random_teleport_cube": [ 8, 8, 8 ],
+                    "target_distance": 16,
+                    "target_teleport_chance": 0.05,
+                    "light_teleport_chance": 0.05
+                }
+            }
+        },
+        "components": {
+            "minecraft:nameable": {},
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? Math.Random(1,12) : 0"
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "monster",
+                    "mob"
+                ]
+            },
+            "minecraft:collision_box": {
+                "width": 0.6,
+                "height": 1.9
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:navigation.walk": {
+                "is_amphibious": true,
+                "can_pass_doors": false,
+                "can_walk": true,
+                "can_break_doors": false
+            },
+            "minecraft:jump.static": {},
+            "minecraft:can_climb": {},
+            "minecraft:health": {
+                "value": 20,
+                "max": 20
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": {
+                            "test": "in_lava",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": true
+                        },
+                        "cause": "lava",
+                        "damage_per_tick": 4
+                    }
+                ]
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0,
+                "breathes_air": true,
+                "breathes_water": true
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/entities/missmatched_soul.json"
+            },
+            "minecraft:behavior.melee_attack": {
+                "priority": 3
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 7,
+                "speed_multiplier": 1
+            },
+            "minecraft:behavior.look_at_player": {
+                "priority": 8,
+                "look_distance": 6,
+                "probability": 0.02
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 9
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 1
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "priority": 2,
+                "must_see": true,
+                "reselect_targets": true,
+                "within_radius": 25.0,
+                "must_see_forget_duration": 17.0,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "any_of": [
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "max_dist": 35
+                    }
+                ]
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "sequence": [
+                    {
+                        "randomize": [
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "size1"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "size2"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "size3"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "size4"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "size5"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "randomize": [
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "damage1"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "damage2"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "damage3"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "damage4"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "damage5"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "randomize": [
+                            {
+                                "weight": 5
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "special1"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "special2"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "special3"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "special4"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "special5"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "special6"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "special7"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "special8"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "soul_magic:wither_dust_to_black_dye"
+    },
+    "groups": [
+      "soul_magic"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "soul_magic:wither_dust"
+      }
+    ],
+    "result": {
+      "item": "minecraft:dye",
+      "data": 16,
+      "count": 1
+    }
+  }
+}

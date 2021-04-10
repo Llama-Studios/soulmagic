@@ -1,0 +1,176 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.wither_meal": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "on_summon": "1"
+                        }
+                    ]
+                },
+                "on_summon": {
+                    "on_entry": [
+                        "/function wither_meal"
+                    ]
+                }
+            }
+        },
+        "controller.animation.soul_meal": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "on_summon": "1"
+                        }
+                    ]
+                },
+                "on_summon": {
+                    "on_entry": [
+                        "/function soul_meal"
+                    ]
+                }
+            }
+        },
+        "controller.animation.soulinfusercore": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "on_summon": "1"
+                        }
+                    ]
+                },
+                "on_summon": {
+                    "on_entry": [
+                        "/function pedestal_ghosts"
+                    ]
+                }
+            }
+        },
+        "controller.animation.soul": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "on_summon": "1"
+                        }
+                    ]
+                },
+                "on_summon": {
+                    "on_entry": [
+                        "/gamerule sendcommandfeedback false",
+                        "/give @p[r=10] soul_magic:soul_jar_empty"
+                    ]
+                }
+            }
+        },
+        "controller.animation.soulinfuserrecipes": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "soulmeal": "query.skin_id == 1"
+                        },
+                        {
+                            "soulsteel": "query.skin_id == 2"
+                        },
+                        {
+                            "eggcorrecta": "query.skin_id == 3"
+                        },
+                        {
+                            "eggcorrectp": "query.skin_id == 4"
+                        },
+                        {
+                            "eggcorrectn": "query.skin_id == 5"
+                        },
+                        {
+                            "eggcorrecth": "query.skin_id == 6"
+                        },
+                        {
+                            "missmatch": "query.skin_id == 7"
+                        }
+                    ]
+                },
+                "soulmeal": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 1"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function soulmeal",
+                        "@s recipe_complete"
+                    ]
+                },
+                "soulsteel": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 2"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function soulsteel",
+                        "@s recipe_complete"
+                    ]
+                },
+                "eggcorrecta": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 3"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function eggcorrecta",
+                        "@s recipe_complete"
+                    ]
+                },
+                "eggcorrectp": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 4"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function eggcorrectp",
+                        "@s recipe_complete"
+                    ]
+                },
+                "eggcorrectn": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 5"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function eggcorrectn",
+                        "@s recipe_complete"
+                    ]
+                },
+                "eggcorrecth": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 6"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function eggcorrecth",
+                        "@s recipe_complete"
+                    ]
+                },
+                "missmatch": {
+                    "transitions": [
+                        {
+                            "default": "query.skin_id != 7"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function missmatch",
+                        "@s recipe_complete"
+                    ]
+                }
+            }
+        }
+    }
+}

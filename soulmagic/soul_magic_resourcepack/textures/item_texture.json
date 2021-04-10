@@ -1,0 +1,93 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "spawner_smasher": {
+      "textures": "textures/items/spawner_smasher"
+    },
+    "wither_dust": {
+      "textures": "textures/items/wither_dust"
+    },
+    "soul_scrap": {
+      "textures": "textures/items/soul_scrap"
+    },
+    "pedestal": {
+      "textures": "textures/items/pedestal"
+    },
+    "mandrake_a": {
+      "textures": "textures/items/mandrakea"
+    },
+    "soul_infuser_core": {
+      "textures": "textures/items/soulinfusercore"
+    },
+    "amber_n": {
+      "textures": "textures/items/ambern"
+    },
+    "mandrake_seeds": {
+      "textures": "textures/items/mandrakeseeds"
+    },
+    "amber_p": {
+      "textures": "textures/items/amberp"
+    },
+    "soul_spark": {
+      "textures": "textures/items/soulspark"
+    },
+    "mandrake_h": {
+      "textures": "textures/items/mandrakeh"
+    },
+    "soul_steel_ingot": {
+      "textures": "textures/items/soulsteelingot"
+    },
+    "amber_a": {
+      "textures": "textures/items/ambera"
+    },
+    "soul_jar_p": {
+      "textures": "textures/items/souljara"
+    },
+    "amber_or_mandrake": {
+      "textures": "textures/items/amberormandrake"
+    },
+    "soul_meal": {
+      "textures": "textures/items/soulmeal"
+    },
+    "amber_h": {
+      "textures": "textures/items/amberh"
+    },
+    "soul_steel_nugget": {
+      "textures": "textures/items/soulsteelnugget"
+    },
+    "soul_jar_a": {
+      "textures": "textures/items/souljara"
+    },
+    "soul_jar_n": {
+      "textures": "textures/items/souljara"
+    },
+    "info_soul_infuser": {
+      "textures": "textures/items/soulmagicinfo"
+    },
+    "soul_jar_h": {
+      "textures": "textures/items/souljara"
+    },
+    "soul_silver_nugget": {
+      "textures": "textures/items/soulsilvernugget"
+    },
+    "info_spawn_egg": {
+      "textures": "textures/items/spawneggtemplate"
+    },
+    "mandrake_p": {
+      "textures": "textures/items/mandrakep"
+    },
+    "soul_jar_empty": {
+      "textures": "textures/items/souljarempty"
+    },
+    "mandrake_n": {
+      "textures": "textures/items/mandraken"
+    },
+    "wither_meal": {
+      "textures": "textures/items/withermeal"
+    },
+    "soul_silver_ingot": {
+      "textures": "textures/items/soulsilveringot"
+    }
+  }
+}

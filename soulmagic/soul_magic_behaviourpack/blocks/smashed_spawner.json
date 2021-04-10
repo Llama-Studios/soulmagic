@@ -1,0 +1,35 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "soul_magic:smashed_spawner",
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/smashed_spawner.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:destroy_time": 0.5,
+            "minecraft:explosion_resistance": 5,
+            "minecraft:geometry": "geometry.smashedspawner",
+            "minecraft:entity_collision": false,
+            "minecraft:pick_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    8,
+                    16
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "smashed_spawner",
+                    "render_method": "alpha_test"
+                }
+            }
+        }
+    }
+}

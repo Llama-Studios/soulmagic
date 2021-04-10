@@ -1,0 +1,57 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "soul_magic:wither_tall_grass",
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/wither_grass.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:destroy_time": 0,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:breakonpush": true,
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "block_filter": [
+                            "minecraft:grass",
+                            "minecraft:dirt",
+                            "minecraft:podzol",
+                            "soul_magic:wither_grass",
+                            "soul_magic:wither_nylium",
+                            "minecraft:crimson_nylium",
+                            "minecraft:warped_nylium",
+                            "minecraft:soul_sand",
+                            "minecraft:soul_soil",
+                            "soul_magic:wither_taller_grass"
+                          ],
+                        "allowed_faces": [
+                            "up"
+                        ]
+                    }
+                ]
+            },
+            "minecraft:geometry": "geometry.cross_block",
+            "minecraft:entity_collision": false,
+            "minecraft:pick_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    16,
+                    16
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "wither_tall_grass",
+                    "render_method": "alpha_test"
+                }
+            }
+        }
+    }
+}

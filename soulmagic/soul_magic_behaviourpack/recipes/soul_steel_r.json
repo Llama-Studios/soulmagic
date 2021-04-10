@@ -1,0 +1,47 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "soul_magic:soul_steel_r"
+    },
+    "groups": [
+      "soul_magic"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "01 ",
+      "345",
+      " 78"
+    ],
+    "key": {
+      "0": {
+        "item": "soul_magic:info_soul_infuser"
+      },
+      "1": {
+        "item": "soul_magic:soul_spark"
+      },
+      "3": {
+        "item": "soul_magic:soul_spark"
+      },
+      "4": {
+        "item": "minecraft:iron_ingot"
+      },
+      "5": {
+        "item": "soul_magic:soul_spark"
+      },
+      "7": {
+        "item": "soul_magic:soul_spark"
+      },
+      "8": {
+        "item": "minecraft:coal",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "soul_magic:soul_steel_ingot",
+      "count": 1
+    }
+  }
+}

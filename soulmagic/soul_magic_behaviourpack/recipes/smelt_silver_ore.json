@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "soul_magic:smelt_silver_ore"
+    },
+    "groups": [
+      "soul_magic"
+    ],
+    "tags": [
+      "furnace", "blast_furnace"
+    ],
+    "input": {
+      "item": "soul_magic:soul_silver_ore"
+    },
+    "output": {
+      "item": "soul_magic:soul_silver_ingot"
+    }
+  }
+}

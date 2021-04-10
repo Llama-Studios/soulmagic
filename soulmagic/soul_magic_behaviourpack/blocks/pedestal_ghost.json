@@ -1,0 +1,45 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "soul_magic:pedestal_ghost",
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/empty.json",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:breakonpush": true,
+            "minecraft:entity_collision": false,
+            "minecraft:destroy_time": 0,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:geometry": "geometry.pedestal",
+            "minecraft:pick_collision": {
+                "size": [
+                    16,
+                    1,
+                    16
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "pedestal_ghost",
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:on_interact":{
+                "target":"self",
+                "event":"soul_magic:place",
+                "condition":"query.get_equipped_item_name == 'pedestal'"
+             }
+        },
+        "events":{
+           "soul_magic:place":{
+              "set_block":{
+                 "block_type": "soul_magic:pedestal_block"
+              },
+              "decrement_stack":{
+              }
+           }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "soul_magic:soul_spark_to_scrap"
+    },
+    "groups": [
+      "soul_magic"
+    ],
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "soul_magic:soul_spark"
+      }
+    },
+    "result": {
+      "item": "soul_magic:soul_scrap",
+      "count": 4
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "By Llama Studios",
+    "name": "Soul Magic BP",
+    "uuid": "78f1d31e-1465-3b1a-b7f5-e2a31f8b3c2f",
+    "version": [
+      1,
+      1,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      16,
+      1
+    ]
+  },
+  "modules": [
+    {
+      "description": "",
+      "type": "data",
+      "uuid": "89ad9b8b-95fb-31bc-8756-d163f3108bf4",
+      "version": [
+        1,
+        1,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "533ef52a-4a0c-39b0-b996-2411fe02a2fa",
+      "version": [
+        1,
+        1,
+        0
+      ]
+    }
+  ]
+}

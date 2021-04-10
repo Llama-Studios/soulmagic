@@ -1,0 +1,127 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+  "soul_magic:smashed_spawner": {
+    "sound": "metal"
+  },
+  "soul_magic:pedestal_block": {
+    "sound": "stone"
+  },
+  "soul_magic:pedestal_ghost": {
+    "sound": "stone"
+  },
+  "soul_magic:pedestal_block_filled": {
+    "sound": "stone"
+  },
+  "soul_magic:wither_tall_grass": {
+    "sound": "grass"
+  },
+  "soul_magic:wither_taller_grass": {
+    "sound": "grass"
+  },
+  "soul_magic:mandrake": {
+    "sound": "grass"
+  },
+  "soul_magic:soul_silver_ore": {
+    "textures": {
+      "up": "soul_magic_soul_silver_ore_up",
+      "down": "soul_magic_soul_silver_ore_down",
+      "south": "soul_magic_soul_silver_ore_south",
+      "north": "soul_magic_soul_silver_ore_north",
+      "west": "soul_magic_soul_silver_ore_west",
+      "east": "soul_magic_soul_silver_ore_east"
+    },
+    "sound": "stone"
+  },
+  "soul_magic:silver_block": {
+    "textures": {
+      "up": "soul_magic_silver_block_up",
+      "down": "soul_magic_silver_block_down",
+      "south": "soul_magic_silver_block_south",
+      "north": "soul_magic_silver_block_north",
+      "west": "soul_magic_silver_block_west",
+      "east": "soul_magic_silver_block_east"
+    },
+    "sound": "metal"
+  },
+  "soul_magic:soul_steel_block": {
+    "textures": {
+      "up": "soul_magic_soul_steel_block_up",
+      "down": "soul_magic_soul_steel_block_down",
+      "south": "soul_magic_soul_steel_block_south",
+      "north": "soul_magic_soul_steel_block_north",
+      "west": "soul_magic_soul_steel_block_west",
+      "east": "soul_magic_soul_steel_block_east"
+    },
+    "sound": "metal"
+  },
+  "soul_magic:wither_grass": {
+    "textures": {
+      "up": "soul_magic_wither_grass_up",
+      "down": "soul_magic_wither_grass_down",
+      "south": "soul_magic_wither_grass_south",
+      "north": "soul_magic_wither_grass_north",
+      "west": "soul_magic_wither_grass_west",
+      "east": "soul_magic_wither_grass_east"
+    },
+    "sound": "gravel"
+  },
+  "soul_magic:wither_nylium": {
+    "textures": {
+      "up": "soul_magic_wither_nylium_up",
+      "down": "soul_magic_wither_nylium_down",
+      "south": "soul_magic_wither_nylium_south",
+      "north": "soul_magic_wither_nylium_north",
+      "west": "soul_magic_wither_nylium_west",
+      "east": "soul_magic_wither_nylium_east"
+    },
+    "sound": "stone"
+  },
+  "soul_magic:wither_wart_block": {
+    "textures": {
+      "up": "soul_magic_wither_wart_block_up",
+      "down": "soul_magic_wither_wart_block_down",
+      "south": "soul_magic_wither_wart_block_south",
+      "north": "soul_magic_wither_wart_block_north",
+      "west": "soul_magic_wither_wart_block_west",
+      "east": "soul_magic_wither_wart_block_east"
+    },
+    "sound": "stone"
+  },
+  "soul_magic:wither_stem": {
+    "textures": {
+      "up": "soul_magic_wither_stem_up",
+      "down": "soul_magic_wither_stem_down",
+      "south": "soul_magic_wither_stem_south",
+      "north": "soul_magic_wither_stem_north",
+      "west": "soul_magic_wither_stem_west",
+      "east": "soul_magic_wither_stem_east"
+    },
+    "sound": "wood"
+  },
+  "soul_magic:wither_light": {
+    "textures": {
+      "up": "soul_magic_wither_light_up",
+      "down": "soul_magic_wither_light_down",
+      "south": "soul_magic_wither_light_south",
+      "north": "soul_magic_wither_light_north",
+      "west": "soul_magic_wither_light_west",
+      "east": "soul_magic_wither_light_east"
+    },
+    "sound": "stone"
+  },
+  "soul_magic:amber_ore": {
+    "textures": {
+      "up": "soul_magic_amber_ore_up",
+      "down": "soul_magic_amber_ore_down",
+      "south": "soul_magic_amber_ore_south",
+      "north": "soul_magic_amber_ore_north",
+      "west": "soul_magic_amber_ore_west",
+      "east": "soul_magic_amber_ore_east"
+    },
+    "sound": "stone"
+  }
+}

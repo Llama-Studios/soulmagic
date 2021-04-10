@@ -1,0 +1,177 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "soul_magic:soula",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "soul_magic:soul"
+                ]
+            },
+            "animations": {
+                "soul_magic:soul": "controller.animation.soul"
+            }
+        },
+        "component_groups": {
+            "remove": {
+                "minecraft:timer": {
+                    "looping": false,
+                    "time": 0.1,
+                    "time_down_event": {
+                        "event": "removenow",
+                        "target": "self"
+                    }
+                }
+            },
+            "removenow": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "interact_text": "Take",
+                        "use_item": true,
+                        "transform_to_item": "soul_magic:soul_jar_a",
+                        "on_interact": {
+                            "event": "remove",
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "soul_magic:soul_jar_empty"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "minecraft:behavior.random_hover": {
+                "priority": 12,
+                "xz_dist": 8,
+                "y_dist": 8,
+                "y_offset": -1,
+                "interval": 1,
+                "hover_height": [1, 4]
+            },
+            "minecraft:behavior.melee_attack": {
+                "priority": 2
+            },
+            "minecraft:behavior.float": {
+                "priority": 19
+            },
+            "minecraft:attack": {
+                "damage": 4
+            },
+            "minecraft:type_family": {
+                "family": [ "soul", "mob" ]
+            },
+            "minecraft:behavior.nearest_attackable_target": {
+                "priority": 13,
+                "reselect_targets": true,
+                "scan_interval": 20,
+                "within_radius": 20.0,
+                "must_see_forget_duration": 0.5,
+                "target_search_height": 30.0,
+        
+                "entity_types": [
+                  {
+                    "filters": { "test": "is_family", "subject": "other", "value": "player" },
+                    "max_dist": 20
+                  }
+                ]
+            },
+            "minecraft:breathable": {
+                "totalSupply": 15,
+                "suffocateTime": 0
+            },
+            "minecraft:collision_box": {
+                "width": 1,
+                "height": 1
+            },
+            "minecraft:conditional_bandwidth_optimization": {
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "fall",
+                    "deals_damage": false
+                }
+            },
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? 5 : 0"
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/entities/soul.json"
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": {
+                            "test": "in_lava",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": true
+                        },
+                        "cause": "lava",
+                        "damage_per_tick": 4
+                    }
+                ]
+            },
+            "minecraft:movement": {
+                "value": 0.5
+            },
+            "minecraft:flying_speed": {
+                "value": 0.3
+            },
+            "minecraft:navigation.hover": {
+                "can_path_over_water": true,
+                "can_sink": false,
+                "can_pass_doors": false,
+                "can_path_from_air": true,
+                "avoid_water": true,
+                "avoid_damage_blocks": true,
+                "avoid_sun": false
+            },
+            "minecraft:movement.hover": {},
+            "minecraft:jump.static": {},
+            "minecraft:can_fly": {},
+            "minecraft:health": {
+                "value": 15,
+                "max": 15
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+              }
+        },
+        "events": {
+            "remove": {
+                "add": {
+                    "component_groups": [
+                        "remove"
+                    ]
+                }
+            },
+            "removenow": {
+                "add": {
+                    "component_groups": [
+                        "removenow"
+                    ]
+                }
+            }
+        }
+    }
+}

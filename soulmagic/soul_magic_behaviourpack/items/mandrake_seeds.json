@@ -1,0 +1,23 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "soul_magic:mandrake_seeds",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:foil": false,
+      "minecraft:stacked_by_data": false,
+      "minecraft:icon":{
+         "texture":"mandrake_seeds"
+      },
+      "minecraft:display_name":{
+         "value":"§bMandrake Seeds"
+      },
+      "minecraft:block_placer": {
+        "block": "soul_magic:mandrake"
+      }
+    }
+  }
+}
