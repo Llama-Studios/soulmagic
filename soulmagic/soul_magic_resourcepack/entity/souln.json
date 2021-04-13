@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "soul_magic:souln",
 			"materials": {
-				"default": "charged_creeper"
+				"default": "slime_outer"
 			},
 			"textures": {
 				"default": "textures/entities/soul/souln"
